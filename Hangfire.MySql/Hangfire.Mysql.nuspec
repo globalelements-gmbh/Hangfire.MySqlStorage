@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<package xmlns="http://schemas.microsoft.com/packaging/2011/08/nuspec.xsd">
+  <metadata>
+    <id>GlobalElements.Hangfire.MySQL</id>
+    <version>2.1.0-RC01</version>
+    <title>GlobalElements.Hangfire.MySQL</title>
+    <authors>Global Elements GmbH, arnoladasgudas</authors>
+    <license type="expression">LGPL-3.0</license>
+    <requireLicenseAcceptance>false</requireLicenseAcceptance>
+    <projectUrl>https://github.com/globalelements-gmbh/EventDispatcher</projectUrl>
+    <summary>An fork of https://github.com/arnoldasgudas/Hangfire.MySqlStorage providing MySQL
+      support for Hangfire.
+    </summary>
+    <description>
+      This is a fork of https://github.com/arnoldasgudas/Hangfire.MySqlStorage, which fixes some
+      issues around MySQL 8 support and updates dependencies.
+    </description>
+    <releaseNotes>
+      See GitHub: https://github.com/globalelements-gmbh/Hangfire.MySqlStorage/releases
+    </releaseNotes>
+    <copyright>Global Elements GmbH, arnoldasgudas</copyright>
+    <dependencies>
+      <dependency id="Dapper" version="1.60.6"/>
+      <dependency id="Microsoft.CSharp" version="4.7.0"/>
+      <dependency id="Newtonsoft.Json" version="11.0.2"/>
+      <dependency id="Hangfire.Core" version="1.7.19"/>
+    </dependencies>
+  </metadata>
+  <files>
+    <file src=".\bin\Release\netstandard2.0\Hangfire.MySql.dll"
+          target="lib\netstandard2.0\Hangfire.MySql.dll"/>
+    <file src=".\bin\Release\netstandard2.0\Hangfire.MySql.xml"
+          target="lib\netstandard2.0\Hangfire.MySql.xml"/>
+
+    <file src=".\bin\Release\netcoreapp3.1\Hangfire.MySql.dll"
+          target="lib\netcoreapp3.1\Hangfire.MySql.dll"/>
+    <file src=".\bin\Release\netcoreapp3.1\Hangfire.MySql.xml"
+          target="lib\netcoreapp3.1\Hangfire.MySql.xml"/>
+
+    <file src=".\bin\Release\net5.0\Hangfire.MySql.dll"
+          target="lib\net5.0\Hangfire.MySql.dll"/>
+    <file src=".\bin\Release\net5.0\Hangfire.MySql.xml"
+          target="lib\net5.0\Hangfire.MySql.xml"/>
+  </files>
+</package>
